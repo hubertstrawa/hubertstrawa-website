@@ -103,6 +103,7 @@
 
   @media (max-width: 600px) {
     .showcase::after {
+      background: rgba(0, 0, 0, 0.65);
       box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
     }
 
