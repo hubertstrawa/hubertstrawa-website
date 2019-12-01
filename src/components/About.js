@@ -11,7 +11,7 @@ const Wrapper = styled.section`
   h3 {
     text-align: center;
     font-size: 3.7rem;
-    margin: 9rem 0;
+    margin: 15rem 0 9rem 0;
   }
 `
 
