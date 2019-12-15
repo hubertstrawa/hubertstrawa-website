@@ -89,7 +89,7 @@ const Work = () => {
           <div>
             <img src={item} alt="Heracles Website"/>
           </div>
-          <h4>Heracles Mobile Strategy Consultancy</h4>
+          <h4>Heracles Mobile Strategy</h4>
           <p>HTML, CSS, JS (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
