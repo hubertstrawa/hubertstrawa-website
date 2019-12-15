@@ -10,6 +10,7 @@ module.exports = {
     linkedinUrl: 'https://www.linkedin.com/in/hubert-strawa',
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`
   ]
 }

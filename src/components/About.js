@@ -133,7 +133,7 @@ const About = () => {
 
   return (
     <Wrapper id="about">
-      <ScrollAnimation animateIn="fadeIn" duration="1">
+      <ScrollAnimation animateIn="fadeIn">
       <h3>About me</h3>
       <Box>
         <Left>
