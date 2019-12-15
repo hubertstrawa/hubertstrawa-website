@@ -1,6 +1,9 @@
 import React from "react"
+import {Link} from 'gatsby'
 import styled from "styled-components"
 import img from "../assets/img.jpg"
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 const Wrapper = styled.section`
   grid-column: center-start / center-end;
@@ -11,7 +14,7 @@ const Wrapper = styled.section`
   h3 {
     text-align: center;
     font-size: 3.7rem;
-    margin: 15rem 0 9rem 0;
+    margin: 9rem 0 8rem 0;
   }
 `
 
@@ -30,11 +33,18 @@ const Left = styled.div`
     padding-right: 0;
   }
 
+  a {
+    color: ${({theme}) => theme.purpleLink};
+    letter-spacing: 1px;
+    border-bottom: 1px solid ${({theme}) => theme.purpleLink};
+    text-decoration: none;
+  }
+
   h4 {
     font-size: 3rem;
     @media (max-width: ${({ theme }) => theme.desktop}) {
       margin-bottom: 3rem;
-      font-size: 2.8rem;
+      font-size: 2.3rem;
     }
   }
 
@@ -44,7 +54,7 @@ const Left = styled.div`
 
     @media (max-width: ${({ theme }) => theme.desktop}) {
       margin-bottom: 3rem;
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
   }
 
@@ -60,7 +70,7 @@ const Left = styled.div`
         color: ${({theme}) => theme.purpleLink};
         text-decoration: none;
         border-bottom: 1px solid ${({theme}) => theme.purpleLink};
-        @media (max-width: ${({theme}) => theme.tabletLandscape}) {
+        @media (max-width: ${({ theme }) => theme.tabletLandscape}) {
         display: block;
         text-align: right;
         margin-bottom: .7rem;
@@ -82,6 +92,7 @@ const Right = styled.div`
 
 const Skills = styled.div`
   font-size: 2rem;
+  margin-bottom: 10rem;
 
   h3 {
     font-size: 3.7rem;
@@ -93,15 +104,15 @@ const Skills = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     grid-gap: 3rem;
     margin: 3rem 0;
-    @media (max-width: ${({ theme }) => theme.tablet}) {
+    @media (max-width: ${({ theme }) => theme.mobile}) {
         grid-template-columns: 1fr;
     }
 
     span {
       text-align: center;
-      background-color: #683dad;
+      background-color: ${({theme}) => theme.purpleSkill};
       border-radius: 4px;
-      color: #fff;
+      color: #ffffff;
       padding: 0.5rem 0;
     }
   }
@@ -110,6 +121,7 @@ const Skills = styled.div`
 const About = () => {
   return (
     <Wrapper id="about">
+      <ScrollAnimation animateIn="fadeIn" duration="1">
       <h3>About me</h3>
       <Box>
         <Left>
@@ -118,24 +130,25 @@ const About = () => {
           </h4>
           <p>
             I got interested in web development as a kid while I’ve been playing
-            online browser games and wanted to build one with PHP and MySQL
+            online browser games and wanted to build one with the help of PHP and MySQL
             tutorials. Few years later I started blogging on travelling Jamaica
             as a backpacker for about a year and it was running on Wordpress.
           </p>
           <p>
-            In 2018 I discovered new tech stacks possibilities and I wanted to
+            In 2018 I discovered modern tech stacks possibilities and I wanted to
             take my knowledge to the next level so I dropped out of college to
-            focus fully on programming. Apart from coding I also love travelling
-            and a bass guitar.
+            focus fully on coding. I write about it on my tech related <Link to="/blog">blog</Link>. Apart from coding I also enjoy travelling and playing a bass guitar.
           </p>
           <span>
-            Find me online at <a href="#">github</a> <a href="#">twitter</a> <a href="#">linkedin</a>
+             Follow me online at <a href="https://github.com/hubertstrawa" target="_blank" rel="noopener noreferrer">github</a> <a href="https://twitter.com/hubertstrawa" target="_blank" rel="noopener noreferrer">twitter</a> <a href="https://www.linkedin.com/in/hubert-strawa" target="_blank" rel="noopener noreferrer">linkedin</a>
           </span>
         </Left>
         <Right>
           <img src={img} alt="" />
         </Right>
       </Box>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="bounceInRight" duration="1">
       <Skills>
         <h3>Skills</h3>
         <div>
@@ -148,6 +161,7 @@ const About = () => {
           <span>git</span>
         </div>
       </Skills>
+      </ScrollAnimation>
     </Wrapper>
   )
 }

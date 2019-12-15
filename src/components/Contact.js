@@ -10,7 +10,7 @@ const Wrapper = styled.section`
   h3 {
     text-align: center;
     font-size: 3.7rem;
-    margin: 9rem 0 4rem 0;
+    margin: 5rem 0 4rem 0;
   }
 
   p {
@@ -37,7 +37,7 @@ form {
   flex-direction: column;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 80%;
+    width: 83%;
   }
 
   input, textarea {
@@ -102,7 +102,7 @@ form {
 const Contact = () => {
     return (
         <Wrapper id="contact">
-          {/* <ScrollAnimation animateIn="bounceInUp" duration="1"> */}
+          <ScrollAnimation animateIn="bounceInUp" duration="1">
           <h3>Contact</h3>
           <p>Feel free to get in touch with me at <strong>hubertstrawa@gmail.com</strong> <span role="img" aria-label="">🤝</span></p>
           <ContactForm>
@@ -116,7 +116,7 @@ const Contact = () => {
               <button type="submit">Send</button>
             </form>
           </ContactForm>
-          {/* </ScrollAnimation> */}
+          </ScrollAnimation>
         </Wrapper>
     )
 }

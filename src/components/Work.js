@@ -1,12 +1,18 @@
 import React from "react"
 import styled from "styled-components"
 import item from "../assets/item.svg"
+import item2 from "../assets/item2.svg"
+import item3 from "../assets/item3.svg"
+import item4 from "../assets/item4.svg"
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 const Wrapper = styled.section`
   grid-column: center-start / center-end;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-bottom: 12rem;
 
   h3 {
     font-size: 3.6rem;
@@ -63,42 +69,51 @@ const Item = styled.div`
       padding: 0 2rem;
     }
   }
+
+  a {
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    color: ${({theme}) => theme.purpleLink};
+    text-decoration: none;
+  }
 `
 
 const Work = () => {
   return (
     <Wrapper id="work">
       <h3>Work</h3>
+      <ScrollAnimation animateIn="fadeIn">
       <Grid>
         <Item>
           <div>
-            <img src={item} />
+            <img src={item} alt="Heracles Website"/>
           </div>
           <h4>Heracles Mobile Strategy Consultancy</h4>
-          <p>Front-end; HTML, CSS, JS (github/demo)</p>
+          <p>Front-end; HTML, CSS, JS (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
           <div>
-            <img src={item} />
+            <img src={item2} alt="Ductile Drivers Website"/>
           </div>
-          <h4>Heracles Mobile Strategy Consultancy</h4>
-          <p>Front-end; HTML, CSS, JS (github/demo)</p>
+          <h4>Ductile Drivers Band</h4>
+          <p>UI Design, Front-end; Gatsby (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
           <div>
-            <img src={item} />
+            <img src={item3} alt="Magnolia Website"/>
           </div>
-          <h4>Heracles Mobile Strategy Consultancy</h4>
-          <p>Front-end; HTML, CSS, JS (github/demo)</p>
+          <h4>Magnolia Flowershop</h4>
+          <p>Front-end; HTML, CSS, JS (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
           <div>
-            <img src={item} />
+            <img src={item4} alt="Dirty Lust Website"/>
           </div>
-          <h4>Heracles Mobile Strategy Consultancy</h4>
-          <p>Front-end; HTML, CSS, JS (github/demo)</p>
+          <h4>Dirty Lust Tattoo Studio</h4>
+          <p>Front-end; HTML, CSS, JS (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
       </Grid>
+      </ScrollAnimation>
     </Wrapper>
   )
 }
