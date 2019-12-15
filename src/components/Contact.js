@@ -102,7 +102,7 @@ form {
 const Contact = () => {
     return (
         <Wrapper id="contact">
-          <ScrollAnimation animateIn="bounceInUp" duration="1">
+          <ScrollAnimation animateIn="fadeIn" duration="1">
           <h3>Contact</h3>
           <p>Feel free to get in touch with me at <strong>hubertstrawa@gmail.com</strong> <span role="img" aria-label="">🤝</span></p>
           <ContactForm>

@@ -148,7 +148,7 @@ const About = () => {
         </Right>
       </Box>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="bounceInRight" duration="1">
+      <ScrollAnimation animateIn="fadeIn" duration="1">
       <Skills>
         <h3>Skills</h3>
         <div>

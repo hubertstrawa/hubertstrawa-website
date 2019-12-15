@@ -94,10 +94,10 @@ const Work = () => {
         </Item>
         <Item>
           <div>
-            <img src={item2} alt="Ductile Drivers Website"/>
+            <img src={item} alt="Game Explorer App"/>
           </div>
-          <h4>Ductile Drivers Band</h4>
-          <p>UI, Front-end; Gatsby (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
+          <h4>Game Explorer App [soon]</h4>
+          <p>React, Hooks, API calls (<a href="#" target="_blank" rel="noopener noreferrer">github </a>/<a href="#" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
           <div>
@@ -108,10 +108,10 @@ const Work = () => {
         </Item>
         <Item>
           <div>
-            <img src={item4} alt="Dirty Lust Website"/>
+            <img src={item2} alt="Ductile Drivers Website"/>
           </div>
-          <h4>Dirty Lust Tattoo Studio</h4>
-          <p>Front-end; HTML, CSS, JS (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
+          <h4>Ductile Drivers Band</h4>
+          <p>UI, Front-end; Gatsby (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
       </Grid>
       </ScrollAnimation>

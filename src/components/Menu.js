@@ -59,13 +59,6 @@ const Menu = ({ open, setOpen }) => {
         </span>
         About me
       </Link>
-      <Link to="#work">
-        <span role="img" aria-label="contact">
-          {/* &#x1f4e9; */}
-          📖
-        </span>
-        Blog
-      </Link>
       <Link to="#contact">
         <span role="img" aria-label="contact">
           &#x1f4e9;
