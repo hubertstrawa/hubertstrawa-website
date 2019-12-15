@@ -49,7 +49,7 @@ const CenterBox = styled.div`
       padding-bottom: 2.9rem;
 
       @media (max-width: ${({ theme }) => theme.mobile}) {
-        font-size: 4.4rem;
+        font-size: 4.2rem;
       }
     }
   }
