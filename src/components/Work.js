@@ -90,28 +90,28 @@ const Work = () => {
             <img src={item} alt="Heracles Website"/>
           </div>
           <h4>Heracles Mobile Strategy</h4>
-          <p>HTML, CSS, JS (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
+          <p>HTML, CSS, JS (<a href="https://github.com/hubertstrawa/heracles-website" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
           <div>
             <img src={item} alt="Game Explorer App"/>
           </div>
           <h4>Game Explorer App [soon]</h4>
-          <p>React, Hooks, API calls (<a href="#" target="_blank" rel="noopener noreferrer">github </a>/<a href="#" target="_blank" rel="noopener noreferrer"> live</a>)</p>
+          <p>React, Hooks, API calls (<a href="https://github.com/hubertstrawa/react-game-explorer" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://github.com/hubertstrawa/react-game-explorer" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
           <div>
             <img src={item3} alt="Magnolia Website"/>
           </div>
           <h4>Magnolia Flowershop</h4>
-          <p>UI Design, HTML, CSS, JS (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
+          <p>UI Design, HTML, CSS, JS (<a href="https://github.com/hubertstrawa/magnolia-flowershop-website" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://kwiaciarniamagnolia.net/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
           <div>
             <img src={item2} alt="Ductile Drivers Website"/>
           </div>
           <h4>Ductile Drivers Band</h4>
-          <p>UI Design, Gatsby (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
+          <p>UI Design, Gatsby (<a href="https://github.com/hubertstrawa/gatsby-ductile-drivers" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://www.ductiledrivers.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
       </Grid>
       </ScrollAnimation>
