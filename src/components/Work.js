@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import item from "../assets/item.svg"
-import item2 from "../assets/item2.svg"
-import item3 from "../assets/item3.svg"
-import item4 from "../assets/item4.svg"
+import item from "../assets/heracles.png"
+import item2 from "../assets/ductile.png"
+import item3 from "../assets/magnolia.png"
+import item4 from "../assets/dirtylust.png"
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
@@ -38,10 +38,11 @@ const Item = styled.div`
   div {
     background-color: ${({ theme }) => theme.purpleBorder};
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.33);
-    /* transition: transform .3s ease-in-out;  */
     border-radius: 4px;
 
     img {
+      width: 100%;
+
       @media (max-width: ${({ theme }) => theme.mobile}) {
         width: 90%;
       }
@@ -96,7 +97,7 @@ const Work = () => {
             <img src={item2} alt="Ductile Drivers Website"/>
           </div>
           <h4>Ductile Drivers Band</h4>
-          <p>UI Design, Front-end; Gatsby (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
+          <p>UI, Front-end; Gatsby (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
           <div>
