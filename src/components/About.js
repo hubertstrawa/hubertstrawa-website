@@ -39,7 +39,7 @@ const Left = styled.div`
   }
 
   p {
-    color: rgba(206, 197, 221, 0.7);
+    color: ${({theme}) => theme.aboutText};
     font-size: 2.4rem;
 
     @media (max-width: ${({ theme }) => theme.desktop}) {
@@ -57,10 +57,10 @@ const Left = styled.div`
 
     a {
         letter-spacing: 1px;
-        color: #A486D4;
+        color: ${({theme}) => theme.purpleLink};
         text-decoration: none;
-        border-bottom: 1px solid #A486D4;
-        @media (max-width: ${({ theme }) => theme.desktop}) {
+        border-bottom: 1px solid ${({theme}) => theme.purpleLink};
+        @media (max-width: ${({theme}) => theme.tabletLandscape}) {
         display: block;
         text-align: right;
         margin-bottom: .7rem;
@@ -93,7 +93,7 @@ const Skills = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     grid-gap: 3rem;
     margin: 3rem 0;
-    @media (max-width: ${({ theme }) => theme.mobile}) {
+    @media (max-width: ${({ theme }) => theme.tablet}) {
         grid-template-columns: 1fr;
     }
 

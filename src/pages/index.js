@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import Showcase from '../components/Showcase'
 import Work from '../components/Work'
 import About from '../components/About'
+import Contact from '../components/Contact'
 
 const Index = () => {
     return (
@@ -10,6 +11,7 @@ const Index = () => {
             <Showcase />
             <Work />
             <About />
+            <Contact />
         </Layout>
     )
 }

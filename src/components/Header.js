@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Link} from 'gatsby'
 import styled from 'styled-components'
 import LogoSrc from '../assets/logo.svg'
 import Menu from './Menu'
@@ -57,10 +58,10 @@ const Header = () => {
                 <img src={LogoSrc} href="Logo"/>
                 <nav>
                     <ul>
-                        <li><a href="#test">Work</a></li>
-                        <li><a href="#test">About</a></li>
-                        <li><a href="#test">Blog</a></li>
-                        <li><a href="#test">Contact</a></li>
+                        <li><Link to="#work">Work</Link></li>
+                        <li><Link to="#about">About</Link></li>
+                        <li><Link to="#work">Work</Link></li>
+                        <li><Link to="#contact">Contact</Link></li>
                     </ul>
                 </nav>
                 <Burger open={open} setOpen={setOpen} />

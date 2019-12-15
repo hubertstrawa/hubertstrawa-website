@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import {Link} from 'gatsby'
 
 const StyledMenu = styled.nav`
   position: fixed;
@@ -32,7 +33,7 @@ const StyledMenu = styled.nav`
     transition: color 0.3s linear;
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       text-align: center;
     }
 
@@ -45,30 +46,32 @@ const StyledMenu = styled.nav`
 const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open} onClick={() => setOpen(!open)}>
-      <a href="#test">
+      <Link to="#work">
         <span role="img" aria-label="about us">
-          &#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;
+          {/* &#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f; */}
+          💻
         </span>
         Work
-      </a>
-      <a href="#test">
+      </Link>
+      <Link to="#about">
         <span role="img" aria-label="price">
-          &#x1f4b8;
+        💁‍♂
         </span>
         About me
-      </a>
-      <a href="#test">
+      </Link>
+      <Link to="#work">
         <span role="img" aria-label="contact">
-          &#x1f4e9;
+          {/* &#x1f4e9; */}
+          📖
         </span>
         Blog
-      </a>
-      <a href="#test">
+      </Link>
+      <Link to="#contact">
         <span role="img" aria-label="contact">
           &#x1f4e9;
         </span>
         Contact
-      </a>
+      </Link>
     </StyledMenu>
   )
 }
