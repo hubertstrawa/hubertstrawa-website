@@ -113,7 +113,7 @@ const Showcase = () => {
         <span>MULTIPURPOSE FRONT-END DEVELOPER</span>
         <div>
           <h1>Hi, I’m Hubert</h1>
-          <h2>I will build your website.</h2>
+          <h2>I can build your website.</h2>
         </div>
         <Buttons>
           <Button href="#work" main>

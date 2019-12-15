@@ -90,7 +90,7 @@ const Work = () => {
             <img src={item} alt="Heracles Website"/>
           </div>
           <h4>Heracles Mobile Strategy Consultancy</h4>
-          <p>Front-end; HTML, CSS, JS (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
+          <p>HTML, CSS, JS (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
           <div>
@@ -104,14 +104,14 @@ const Work = () => {
             <img src={item3} alt="Magnolia Website"/>
           </div>
           <h4>Magnolia Flowershop</h4>
-          <p>Front-end; HTML, CSS, JS (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
+          <p>UI Design, HTML, CSS, JS (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
           <div>
             <img src={item2} alt="Ductile Drivers Website"/>
           </div>
           <h4>Ductile Drivers Band</h4>
-          <p>UI, Front-end; Gatsby (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
+          <p>UI Design, Gatsby (<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://heracles-website.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
       </Grid>
       </ScrollAnimation>

@@ -1,5 +1,5 @@
 import React from "react"
-import {Link} from 'gatsby'
+import {Link, useStaticQuery, graphql} from 'gatsby'
 import styled from "styled-components"
 import img from "../assets/img.jpg"
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -119,6 +119,18 @@ const Skills = styled.div`
 `
 
 const About = () => {
+  const data = useStaticQuery(graphql`
+    query SocialLinks {
+      site {
+        siteMetadata {
+          twitterUrl
+          githubUrl
+          linkedinUrl
+        }
+      }
+    }
+  `)
+
   return (
     <Wrapper id="about">
       <ScrollAnimation animateIn="fadeIn" duration="1">
@@ -137,10 +149,10 @@ const About = () => {
           <p>
             In 2018 I discovered modern tech stacks possibilities and I wanted to
             take my knowledge to the next level so I dropped out of college to
-            focus fully on coding. I write about it on my tech related <Link to="/blog">blog</Link>. Apart from coding I also enjoy travelling and playing a bass guitar.
+            focus fully on coding. Apart from it I also enjoy travelling and playing a bass guitar.
           </p>
           <span>
-             Follow me online at <a href="https://github.com/hubertstrawa" target="_blank" rel="noopener noreferrer">github</a> <a href="https://twitter.com/hubertstrawa" target="_blank" rel="noopener noreferrer">twitter</a> <a href="https://www.linkedin.com/in/hubert-strawa" target="_blank" rel="noopener noreferrer">linkedin</a>
+             Follow me online at <a href={data.site.siteMetadata.githubUrl} target="_blank" rel="noopener noreferrer">github</a> <a href={data.site.siteMetadata.twitterUrl} target="_blank" rel="noopener noreferrer">twitter</a> <a href={data.site.siteMetadata.linkedinUrl} target="_blank" rel="noopener noreferrer">linkedin</a>
           </span>
         </Left>
         <Right>
