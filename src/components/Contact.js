@@ -5,12 +5,12 @@ import "animate.css/animate.min.css";
 
 const Wrapper = styled.section`
   grid-column: center-start / center-end;
-  margin: 3rem 0;
+  margin: 2.5rem 0;
   
   h3 {
     text-align: center;
     font-size: 3.7rem;
-    margin: 5rem 0 4rem 0;
+    margin: 4rem 0 2.5rem 0;
   }
 
   p {
