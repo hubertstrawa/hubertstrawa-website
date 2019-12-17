@@ -30,7 +30,7 @@ justify-content: space-between;
 nav ul {
     display: flex;
     list-style-type: none;
-    width: 30rem;
+    width: 36rem;
     justify-content: space-between;
     font-size: 1.6rem;
 
@@ -61,6 +61,7 @@ const Header = () => {
                         <li><Link to="#work">Work</Link></li>
                         <li><Link to="#about">About</Link></li>
                         <li><Link to="#contact">Contact</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
                     </ul>
                 </nav>
                 <Burger open={open} setOpen={setOpen} />

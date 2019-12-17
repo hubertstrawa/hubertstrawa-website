@@ -65,6 +65,9 @@ const Menu = ({ open, setOpen }) => {
         </span>
         Contact
       </Link>
+      <Link to="#contact">
+        Blog
+      </Link>
     </StyledMenu>
   )
 }
