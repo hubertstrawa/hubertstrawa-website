@@ -37,7 +37,7 @@ form {
   flex-direction: column;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 83%;
+    width: 90%;
   }
 
   input, textarea {

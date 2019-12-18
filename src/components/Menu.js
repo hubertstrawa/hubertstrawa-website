@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import {Link} from 'gatsby'
+import { Link } from "gatsby"
 
 const StyledMenu = styled.nav`
   position: fixed;
@@ -48,24 +48,26 @@ const Menu = ({ open, setOpen }) => {
     <StyledMenu open={open} onClick={() => setOpen(!open)}>
       <Link to="#work">
         <span role="img" aria-label="about us">
-          {/* &#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f; */}
           💻
         </span>
         Work
       </Link>
       <Link to="#about">
         <span role="img" aria-label="price">
-        💁‍♂
+          💁‍♂
         </span>
         About me
       </Link>
       <Link to="#contact">
         <span role="img" aria-label="contact">
-          &#x1f4e9;
+          📩
         </span>
         Contact
       </Link>
-      <Link to="#contact">
+      <Link to="/blog">
+        <span role="img" aria-label="contact">
+          ✍️
+        </span>
         Blog
       </Link>
     </StyledMenu>

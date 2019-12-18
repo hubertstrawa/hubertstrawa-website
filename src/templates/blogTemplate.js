@@ -4,6 +4,8 @@ import LayoutBlog from '../components/LayoutBlog'
 import styled from 'styled-components'
 import fb from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 const Wrapper = styled.section`
   grid-column: center-start / center-end;
@@ -39,7 +41,7 @@ div {
   div {
     display: flex;
     height: 3rem;
-    width: 5rem;
+    width: 5.2rem;
     padding-top: .7rem;
   }
 }
@@ -100,6 +102,7 @@ const blogTemplate = (props) => {
     return (
         <LayoutBlog>
             <Wrapper>
+              <ScrollAnimation animateIn="fadeIn">
                 <Header>
                   <div>
                     <h1>{props.data.markdownRemark.frontmatter.title}</h1>
@@ -114,6 +117,7 @@ const blogTemplate = (props) => {
                   </Info>
                 </Header>
                 <Content dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></Content>
+                </ScrollAnimation>
             </Wrapper>
         </LayoutBlog>
     )

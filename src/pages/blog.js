@@ -58,14 +58,18 @@ padding: 3rem;
 display: flex;
 flex-direction: column;
 
+
+h2 {
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+        font-size: 2.5rem;
+    }
+}
 `
 const Right = styled.div`
 flex: 5;
 padding: 3rem;
 display: flex;
-/* background-color: ${({theme}) => theme.purpleLink}; */
-background-color: #362E47;
-/* color: ${({theme}) => theme.purpleBorder}; */
+background-color: ${({theme}) => theme.purpleBorder};
 flex-direction: column;
 justify-content: space-between;
 

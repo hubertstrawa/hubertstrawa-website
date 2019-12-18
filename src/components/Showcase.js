@@ -108,7 +108,7 @@ const Blob = styled.div`
 
 const Showcase = () => {
   return (
-    <Wrapper>
+    <Wrapper id="showcase">
       <CenterBox>
         <span>MULTIPURPOSE FRONT-END DEVELOPER</span>
         <div>
