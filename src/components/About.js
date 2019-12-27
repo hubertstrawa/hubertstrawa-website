@@ -149,7 +149,7 @@ const About = () => {
           <p>
             In 2018 I discovered modern tech stacks possibilities and I wanted to
             take my knowledge to the next level so I dropped out of college to
-            focus fully on coding. Apart from it I also enjoy travelling and playing a bass guitar.
+            focus fully on coding. I also write about it on my <Link to='/blog'>blog</Link>. Apart from it I also enjoy travelling and playing a bass guitar.
           </p>
           <span>
              Follow me online at <a href={data.site.siteMetadata.githubUrl} target="_blank" rel="noopener noreferrer">github</a> <a href={data.site.siteMetadata.twitterUrl} target="_blank" rel="noopener noreferrer">twitter</a> <a href={data.site.siteMetadata.linkedinUrl} target="_blank" rel="noopener noreferrer">linkedin</a>

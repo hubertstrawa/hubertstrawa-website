@@ -25,4 +25,4 @@ In case of functions the value of 'this' depends on how the function is called. 
 
 If you call a function using the 'new' operator (as in the example above) 'this' will reference a newly created object.
 
-### Regular functions inside of methods
+<!-- ### Regular functions inside of methods -->

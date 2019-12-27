@@ -123,7 +123,7 @@ const Showcase = () => {
         </Buttons>
       </CenterBox>
       <Blob>
-        <img src={blob} />
+        <img src={blob} alt="Blob"/>
       </Blob>
     </Wrapper>
   )

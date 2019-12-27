@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import item from "../assets/heracles.png"
-import item2 from "../assets/ductile.png"
+import item2 from "../assets/game-explorer.png"
 import item3 from "../assets/magnolia.png"
-import item4 from "../assets/dirtylust.png"
+import item4 from "../assets/ductile.png"
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
@@ -94,10 +94,10 @@ const Work = () => {
         </Item>
         <Item>
           <div>
-            <img src={item} alt="Game Explorer App"/>
+            <img src={item2} alt="Game Explorer App"/>
           </div>
-          <h4>Game Explorer App [soon]</h4>
-          <p>React, Hooks, API calls (<a href="https://github.com/hubertstrawa/react-game-explorer" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://github.com/hubertstrawa/react-game-explorer" target="_blank" rel="noopener noreferrer"> live</a>)</p>
+          <h4>Game Explorer App</h4>
+          <p>React, Hooks, API calls (<a href="https://github.com/hubertstrawa/react-game-explorer" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://gamexplorer.netlify.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>
         </Item>
         <Item>
           <div>
@@ -108,7 +108,7 @@ const Work = () => {
         </Item>
         <Item>
           <div>
-            <img src={item2} alt="Ductile Drivers Website"/>
+            <img src={item4} alt="Ductile Drivers Website"/>
           </div>
           <h4>Ductile Drivers Band</h4>
           <p>UI Design, Gatsby (<a href="https://github.com/hubertstrawa/gatsby-ductile-drivers" target="_blank" rel="noopener noreferrer">github </a>/<a href="https://www.ductiledrivers.com/" target="_blank" rel="noopener noreferrer"> live</a>)</p>

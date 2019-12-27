@@ -45,10 +45,6 @@ const Center = styled.div`
     li a {
       text-decoration: none;
       color: ${({ theme }) => theme.purpleText};
-
-      &:hover {
-        /* onhover */
-      }
     }
   }
 `
@@ -60,7 +56,7 @@ const Header = () => {
     <Wrapper>
       <Center>
         <Link to="#showcase">
-          <img src={LogoSrc} href="Logo" />
+          <img src={LogoSrc} href="Logo" alt="Logo"/>
         </Link>
         <nav>
           <ul>
